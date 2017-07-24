@@ -4,7 +4,7 @@
   </footer>
 </template>
 <script>
-//sử dụng bus từ main.js để thay đổi 1 giá trị title trong header thôi 
+//sử dụng bus từ main.js để thay đổi 1 giá trị title trong header thôi
 //nếu k có this.title trong này thì footer k đổi title
 import { bus } from "../main"
 export default {
@@ -18,13 +18,13 @@ export default {
       copyright: "Copyright @2017 "
     }
   },
-  //sử dụng bus
-  //bus.$on(tên function, callback là data)
-  created() {
+  /*sử dụng bus
+  bus.$on(tên function, callback là data)*/
+  /*created() {
     bus.$on('titleChanged', (data) => {
-      this.title = data;
+      this.title1 = data;
     });
-  }
+  }*/
 }
 </script>
 <style scoped>
